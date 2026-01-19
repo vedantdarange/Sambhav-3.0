@@ -95,7 +95,7 @@ export default function LeaderBoard() {
               <img className="symbol" src={instru} alt="Instrumentation" />
               <div className="dept-name">Instrumentation Engineering</div>
             </div>
-            <div className="status">Participating</div>
+            <div className="status">0 pts</div>
           </div>
 
           <div className="dept">
@@ -104,7 +104,7 @@ export default function LeaderBoard() {
               <img className="symbol" src={rna} alt="Robotics" />
               <div className="dept-name">Robotics & Automation</div>
             </div>
-            <div className="status">Participating</div>
+            <div className="status">0 pts</div>
           </div>
 
         </div>
