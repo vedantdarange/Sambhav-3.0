@@ -13,7 +13,7 @@ export default function Landingpage() {
     // Immediately show main content if the loader has already played
     () => sessionStorage.getItem("loaderPlayed") === "true"
   );
-  
+
   const [isLandscape, setIsLandscape] = useState(
     window.matchMedia("(orientation: landscape)").matches
   );
@@ -62,7 +62,7 @@ export default function Landingpage() {
           ) : (
             <div id="portrait-message">
               <svg className="rotate-icon" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"/><path d="M20.49 15a9 9 0 0 1-14.85 3.36L1 14"/>
+                <path d="M23 4v6h-6" /><path d="M1 20v-6h6" /><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10" /><path d="M20.49 15a9 9 0 0 1-14.85 3.36L1 14" />
               </svg>
               <h1>Please rotate your device to play the introduction</h1>
             </div>
@@ -77,7 +77,7 @@ export default function Landingpage() {
             <img src={mainLogo} alt="Main Logo" className="main-logo" />
             <div className="overlay-text">
               <h1 className="tagline">CREATING FUTURE ENDEAVOURS</h1>
-              <p className="date">15-16 SEPTEMBER 2025</p>
+              <p className="date">9-10 FEBRUARY 2026</p>
               <button
                 className="cta-btn"
                 onClick={() => navigate("/events")}

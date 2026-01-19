@@ -21,7 +21,7 @@ import rna from "../Assets/rna.png";
 export default function LeaderBoard() {
   return (
     <div className="leaderboard-page">
-      <h1 className="page-title">Participating Departments</h1>
+      <h1 className="page-title">CODEX</h1>
 
       {/* Background Icons */}
       <img src={roboticArm} alt="robotic arm" className="icon orange robot-arm" />
@@ -41,7 +41,7 @@ export default function LeaderBoard() {
               <img className="symbol" src={cse} alt="CSE" />
               <div className="dept-name">Computer Science & Engineering</div>
             </div>
-            <div className="status">Participating</div>
+            <div className="status">0 pts</div>
           </div>
 
           <div className="dept">
@@ -50,7 +50,7 @@ export default function LeaderBoard() {
               <img className="symbol" src={it} alt="IT" />
               <div className="dept-name">Information Technology</div>
             </div>
-            <div className="status">Participating</div>
+            <div className="status">0 pts</div>
           </div>
 
           <div className="dept">
@@ -59,7 +59,7 @@ export default function LeaderBoard() {
               <img className="symbol" src={aids} alt="AI-DS" />
               <div className="dept-name">Artificial Intelligence & Data Science</div>
             </div>
-            <div className="status">Participating</div>
+            <div className="status">0 pts</div>
           </div>
 
           <div className="dept">
@@ -68,7 +68,7 @@ export default function LeaderBoard() {
               <img className="symbol" src={entc} alt="E&TC" />
               <div className="dept-name">Electronics & Telecommunication</div>
             </div>
-            <div className="status">Participating</div>
+            <div className="status">0 pts</div>
           </div>
 
           <div className="dept">
@@ -77,7 +77,7 @@ export default function LeaderBoard() {
               <img className="symbol" src={civil} alt="Civil" />
               <div className="dept-name">Civil Engineering</div>
             </div>
-            <div className="status">Participating</div>
+            <div className="status">0 pts</div>
           </div>
 
           <div className="dept">
@@ -86,7 +86,7 @@ export default function LeaderBoard() {
               <img className="symbol" src={mech} alt="Mech" />
               <div className="dept-name">Mechanical Engineering</div>
             </div>
-            <div className="status">Participating</div>
+            <div className="status">0 pts</div>
           </div>
 
           <div className="dept">
