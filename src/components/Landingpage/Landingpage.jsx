@@ -1,5 +1,6 @@
 // src/components/Landingpage/Landingpage.jsx - CORRECTED
 
+import React from "react";
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Landingpage.css";

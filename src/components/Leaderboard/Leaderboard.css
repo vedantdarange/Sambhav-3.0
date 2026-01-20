@@ -5,7 +5,8 @@
   padding-bottom: 5rem;
   min-height: 100vh;
   width: 100%;
-  padding-top: 80px; /* Space below navbar */
+  padding-top: 80px;
+  /* Space below navbar */
 }
 
 .page-title {
@@ -36,18 +37,48 @@
   filter: drop-shadow(0 0 10px rgba(0, 180, 216, 0.6));
 }
 
-.robot-arm { top: 15%; left: 5%; width: 150px; }
-.gear1 { top: 30%; right: 10%; width: 120px; }
-.gear2 { bottom: 20%; left: 10%; width: 100px; }
-.ai-chip { top: 60%; right: 15%; width: 140px; }
-.cpu-chip { bottom: 10%; right: 5%; width: 120px; }
-.gear3 { top: 10%; right: 40%; width: 90px; }
+.robot-arm {
+  top: 15%;
+  left: 5%;
+  width: 150px;
+}
+
+.gear1 {
+  top: 30%;
+  right: 10%;
+  width: 120px;
+}
+
+.gear2 {
+  bottom: 20%;
+  left: 10%;
+  width: 100px;
+}
+
+.ai-chip {
+  top: 60%;
+  right: 15%;
+  width: 140px;
+}
+
+.cpu-chip {
+  bottom: 10%;
+  right: 5%;
+  width: 120px;
+}
+
+.gear3 {
+  top: 10%;
+  right: 40%;
+  width: 90px;
+}
 
 /* Main container */
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;   /* ✅ vertical centering */
+  align-items: center;
+  /* ✅ vertical centering */
   padding: 2rem;
   z-index: 1;
   position: relative;
@@ -59,19 +90,23 @@
   gap: 1.5rem;
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;       /* ✅ horizontally center grid */
+  margin: 0 auto;
+  /* ✅ horizontally center grid */
 }
 
 /* Each Department Row */
 .dept {
   display: grid;
-  grid-template-columns: 1fr auto; /* left + right */
-  align-items: center; /* ✅ vertical centering inside box */
+  grid-template-columns: 1fr auto;
+  /* left + right */
+  align-items: center;
+  /* ✅ vertical centering inside box */
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 15px;
   padding: 1rem 1.5rem;
-  min-height: 70px; /* ✅ consistent row height */
+  min-height: 70px;
+  /* ✅ consistent row height */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -86,6 +121,40 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.rank-badge {
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  color: #fff;
+  flex-shrink: 0;
+  min-width: 45px;
+  text-align: center;
+}
+
+.rank-1 {
+  background: linear-gradient(135deg, #ffd700, #ffed4a);
+  color: #1a1a1a;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.rank-2 {
+  background: linear-gradient(135deg, #c0c0c0, #e8e8e8);
+  color: #1a1a1a;
+  box-shadow: 0 0 10px rgba(192, 192, 192, 0.5);
+}
+
+.rank-3 {
+  background: linear-gradient(135deg, #cd7f32, #daa06d);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(205, 127, 50, 0.5);
+}
+
+.rank-other {
+  background: rgba(255, 255, 255, 0.1);
+  color: #adb5bd;
 }
 
 .tag {
@@ -122,41 +191,38 @@
 }
 
 @media (max-width: 768px) {
-  .dept {
-    grid-template-columns: 1fr; /* stack */
-    text-align: center;
-    gap: 0.5rem;
-  }
-
-  .dept-left {
-    justify-content: center;
-  }
-
-  .status {
-    text-align: center;
-  }
-}
-
-/* Add to the end of Leaderboard.css */
-@media (max-width: 768px) {
   .page-title {
     font-size: 2rem;
   }
+
   .dept {
     padding: 0.8rem 1rem;
-    grid-template-columns: 1fr; /* Stack content in each row */
+    grid-template-columns: 1fr;
+    /* Stack content in each row */
     text-align: center;
     gap: 0.5rem;
   }
+
   .dept-left {
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
+
   .dept-name {
     font-size: 0.9rem;
+    width: 100%;
   }
+
   .status {
     font-size: 0.8rem;
     padding: 4px 8px;
     margin-top: 0.5rem;
+  }
+
+  .rank-badge {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    min-width: 40px;
   }
 }
