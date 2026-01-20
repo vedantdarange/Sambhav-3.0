@@ -18,10 +18,10 @@ export default function LeaderBoard() {
     setDepartments(sortedData);
   }, []);
 
-  const getRankBadge = (index) => {
-    if (index === 0) return <span className="rank-badge rank-1">1st</span>;
-    if (index === 1) return <span className="rank-badge rank-2">2nd</span>;
-    return null;
+  const getScoreClass = (points) => {
+    if (points >= 100) return "status top-score";
+    if (points >= 80) return "status second-score";
+    return "status";
   };
 
   return (
@@ -40,12 +40,11 @@ export default function LeaderBoard() {
           {departments.map((dept, index) => (
             <div className="dept" key={dept.id}>
               <div className="dept-left">
-                {getRankBadge(index)}
                 <div className="tag">{dept.tag}</div>
                 <img className="symbol" src={dept.img} alt={dept.tag} />
                 <div className="dept-name">{dept.name}</div>
               </div>
-              <div className="status">{dept.points} pts</div>
+              <div className={getScoreClass(dept.points)}>{dept.points} pts</div>
             </div>
           ))}
         </div>
