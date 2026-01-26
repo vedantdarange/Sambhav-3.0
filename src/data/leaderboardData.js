@@ -33,7 +33,7 @@ export const leaderboardData = [
         id: "entc",
         tag: "E&TC",
         name: "Electronics & Telecommunication",
-        points: 100,
+        points: 200,
         img: entc,
     },
     {
@@ -47,7 +47,7 @@ export const leaderboardData = [
         id: "mech",
         tag: "MECH",
         name: "Mechanical Engineering",
-        points: 80,
+        points: 160,
         img: mech,
     },
     {
