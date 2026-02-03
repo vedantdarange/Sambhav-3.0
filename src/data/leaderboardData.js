@@ -12,7 +12,7 @@ export const leaderboardData = [
         id: "cse",
         tag: "CSE",
         name: "Computer Science & Engineering",
-        points: 100,
+        points: 80,
         img: cse,
     },
     {
