@@ -12,7 +12,7 @@ export const leaderboardData = [
         id: "cse",
         tag: "CSE",
         name: "Computer Science & Engineering",
-        points: 0,
+        points: 100,
         img: cse,
     },
     {
@@ -47,7 +47,7 @@ export const leaderboardData = [
         id: "mech",
         tag: "MECH",
         name: "Mechanical Engineering",
-        points: 160,
+        points: 260,
         img: mech,
     },
     {
