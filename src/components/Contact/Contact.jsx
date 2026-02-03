@@ -104,7 +104,7 @@ export default function ContactPage() {
         <div className="footer-credits">
           <h4>Credits</h4>
           <p>
-            Shreeraj Babar, Mayuresh Kalal, Tushar Pawar, Janmejay Singh Rathore (LEAD), Vedant Darange (COLEAD), Anam Patave, Yash Badane, Nikita GADALIKAR, Sammrudhi PATABHAJE, Truot ASWAR, Prajwal METHE, Garv Jain 
+            Shreeraj Babar (TECHNICAL SECRETARY), Mayuresh Kalal(TECHNICAL CO-SECRETARY), Tushar Pawar(TECHNICAL ADVISORY), Janmejay Singh Rathore (TECHNICAL LEAD), Vedant Darange (TECHNICAL COLEAD), Anam Patave, Yash Badane, Nikita Gadalikar, Sammrudhi Patabhaje, Trupti Aswar, Prajwal Methe, Garv Jain 
           </p>
         </div>
       </footer>
